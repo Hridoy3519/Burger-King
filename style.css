@@ -1,0 +1,465 @@
+body{
+    font-family: 'open sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #454545;
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    margin-top: 15px;
+    color: #757575;
+    font-family: 'open sans', sans-serif;
+}
+
+.custom-btn{
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.yellowish-text{
+    color: #fbaf32;
+}
+
+.greenish-text{
+    color: #719a0a;  
+}
+
+.custom-yellowish-color{
+    background-color: #fbaf32;
+}
+
+.custom-greenish-color{
+    background-color: #719a0a;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    background-color: red;
+}
+/* Navbar */
+
+.navbar{
+    z-index: 999;
+}
+.navbar-light .navbar-brand,.navbar-light .navbar-brand:hover span, .navbar-light .navbar-brand:hover {
+    color: #fbaf32;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-light .navbar-brand span{
+    color: #719a0a;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    padding: 10px 10px 8px 10px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-item .active, .navbar-light .navbar-nav .nav-link:hover{
+    color: #fbaf32;
+}
+
+/* Header Carousel */
+.carousel{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.carousel .carousel-item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 50%;
+}
+
+.carousel-caption h1{
+    color: #ffffff;
+}
+.yellow-btn
+{
+    background: #fbaf32;
+    border: 2px solid #fbaf32;
+}
+
+.yellow-btn:hover
+{
+    background: rgba(251, 174, 50, 0.1);
+    color: #fbaf32;
+}
+
+.green-btn
+{
+    background: #719a0a;
+    border: 2px solid #719a0a;
+}
+
+.green-btn:hover
+{
+    background: rgba(113, 154, 10, 0.1);
+    color: #719a0a;
+}
+.carousel-caption h1{
+    font-size: 60px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Book A Table */
+#book-table, #food-cards{
+    background-color: #f5f5f5;
+}
+
+#book-table h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.form-area{
+    background-color:#fbaf32;
+}
+
+.white-btn
+{
+    background: white;
+    border: 2px solid white;
+    color: #fbaf32;
+}
+
+.form-area input{
+    width: 100%;
+    border: 1px solid white;
+    background-color: #fbaf32;
+    font-size: 18px;
+}
+
+.form-area input:focus{
+    outline: none;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+} 
+
+/* About Us */
+#about-us{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.left{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.radius{
+    border-radius: 10px;
+}
+
+#yellow-circle, #yellow-circle2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #fbaf32;
+    z-index: 2;
+}
+
+#yellow-circle2{
+    background-color: rgba(251, 174, 50, 1);
+    z-index: 0;
+    animation: radiate 1.5s linear 0.5s infinite;
+}
+
+#about-us h1, #features h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+@keyframes radiate {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+.fa-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 48px;
+}
+
+/* Features */
+
+#features h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#features p{
+    margin-top: 20px;
+}
+
+.box{
+    overflow: hidden;
+}
+.round-top-start{
+    border-top-left-radius: 10px;
+}
+.round-top-end{
+    border-top-right-radius: 10px;
+}
+.round-bottom-start{
+    border-bottom-left-radius: 10px;
+}
+.round-bottom-end{
+    border-bottom-right-radius: 10px;
+}
+
+.round-top-end:hover,.round-top-start:hover,.round-bottom-start:hover,.round-bottom-end:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.cooking{
+    color: #fbaf32;
+}
+
+/* Food cards */
+#food-cards{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#food-cards h2{
+    font-weight: 700;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.inner-box{
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.view-menu p{
+    font-size: 16px;
+    color: #fbaf32;
+    margin-bottom: 0;
+}
+
+.dash{
+    width: 40px;
+    height: 1px;
+    background-color: #fbaf32;
+}
+
+.view-menu:hover p{
+    color: #719a0a;
+    transition: 0.3s;
+}
+
+.view-menu:hover .dash{
+    background-color: #719a0a;
+    width: 60px;
+    transition: 0.3s;
+}
+
+
+.food-box .fas{
+    font-size: 64px;
+    color: #fbaf32;
+}
+
+.food-box:hover .inner-box .fas{
+    color: #719a0a;
+    transition: 0.3s;
+    
+}
+
+.food-box:hover .inner-box{
+    box-shadow: 0 0 0;
+}
+
+/* Food Menu */
+
+#food-menu{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.custom-food-btn{
+    padding: 8px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+}
+
+.custom-food-btn:hover{
+    background-color: #719a0a;
+    color: white;
+    border: none;
+}
+
+#food-menu h2, #chefs h2{
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.img-round{
+    border-radius: 50%;
+}
+
+.menu-details{
+    margin-left: 20px;
+}
+
+.menu-details p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.dot{
+    font-weight: 500;
+    font-size: 22px;
+    color: gray;
+}
+
+.price{
+    font-size: 28px;
+}
+
+.menu-details h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Our Chefs */
+
+#chefs{
+    margin-bottom: 40px;
+}
+
+.card-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.gray-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(228, 222, 222, 0.3);
+    display: none;
+}
+
+.card-image:hover .card-img-top{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-image:hover .gray-bg{
+    display: block;
+    transition: 0.5s;
+}
+
+.card-image:hover .socials{
+    display: block;
+    top: 50%;
+    transition: 0.5s;
+}
+
+.socials{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.socials .fab{
+    font-size: 24px;
+    color: #fbaf32;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:668px) {
+
+    .carousel-caption{
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        width: 80%;
+    }
+    .carousel-caption h1{
+        font-size: 36px;
+    }
+
+    /* Book a Table */
+    #book-table{
+        padding: 20px;  
+    }
+
+    /* Food Cards */
+
+    /* #food-cards{
+        margin-top: 300px;
+    } */
+}
