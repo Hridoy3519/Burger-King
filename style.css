@@ -41,14 +41,38 @@ p{
 
 /* Header */
 header{
-    height: 100vh;
-    background-color: red;
+    min-height: 100vh;
 }
 /* Navbar */
 
 .navbar{
     z-index: 999;
 }
+
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+}
+
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+}
+
+.navbar-fixed .navbar-nav .nav-item .nav-link{
+    color: black !important;
+} 
+
 .navbar-light .navbar-brand,.navbar-light .navbar-brand:hover span, .navbar-light .navbar-brand:hover {
     color: #fbaf32;
     font-size: 45px;
@@ -394,25 +418,10 @@ header .carousel-item img{
     overflow: hidden;
 }
 
-/* .gray-bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(228, 222, 222, 0.3);
-    display: none;
-} */
-
 #chefs .card-image:hover .card-img-top{
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-/* .card-image:hover .gray-bg{
-    display: block;
-    transition: 0.5s;
-} */
 
 #chefs .card-image:hover .socials{
     display: block;
@@ -456,16 +465,28 @@ header .carousel-item img{
         font-size: 32px;
     }
 
+    header .carousel{
+        width: 100%;
+        position: static;
+    }
+
     header .carousel-caption{
         position: absolute;
-        top: 67%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 2;
         width: 80%;
     }
+
     header .carousel-caption h1{
         font-size: 36px;
+    }
+
+    header .carousel-item img{
+        display: block;
+        width: 100%;
+        height: 90vh;
     }
 
     /* Book a Table */
@@ -479,9 +500,4 @@ header .carousel-item img{
         flex-direction: column;
     }
 
-    /* Food Cards */
-
-    /* #food-cards{
-        margin-top: 300px;
-    } */
 }
