@@ -137,3 +137,22 @@ function displayMenuItems(menuItems, n) {
     menuImage.src = menuImages[n];
 }
 
+// Navbar fixed
+
+const nav = document.getElementsByTagName('nav');
+
+const navHeight = nav[0].getBoundingClientRect().height;
+
+window.addEventListener("scroll", function () {
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > navHeight) {
+        nav[0].classList.add('navbar-fixed');
+        nav[0].classList.remove('container');
+    }
+    else {
+        nav[0].classList.remove('navbar-fixed');
+        nav[0].classList.add('container');
+    }
+})
+
+
