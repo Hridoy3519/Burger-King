@@ -72,7 +72,7 @@ header{
 }
 
 /* Header Carousel */
-.carousel{
+header .carousel{
     width: 100%;
     position: absolute;
     top: 0;
@@ -80,7 +80,7 @@ header{
     z-index: 0;
 }
 
-.carousel .carousel-item::after {
+header .carousel .carousel-item::after {
     position: absolute;
     content: "";
     top: 0;
@@ -91,7 +91,7 @@ header{
     z-index: 1;
 }
 
-.carousel-caption{
+header .carousel-caption{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,9 +100,10 @@ header{
     width: 50%;
 }
 
-.carousel-caption h1{
+header .carousel-caption h1{
     color: #ffffff;
 }
+
 .yellow-btn
 {
     background: #fbaf32;
@@ -126,11 +127,12 @@ header{
     background: rgba(113, 154, 10, 0.1);
     color: #719a0a;
 }
-.carousel-caption h1{
+
+header .carousel-caption h1{
     font-size: 60px;
 }
 
-.carousel-item img{
+header .carousel-item img{
     width: 100%;
     height: 100vh;
 }
@@ -387,12 +389,12 @@ header{
     margin-bottom: 40px;
 }
 
-.card-image{
+#chefs .card-image{
     position: relative;
     overflow: hidden;
 }
 
-.gray-bg{
+/* .gray-bg{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -400,19 +402,19 @@ header{
     left: 0;
     background-color: rgba(228, 222, 222, 0.3);
     display: none;
-}
+} */
 
-.card-image:hover .card-img-top{
+#chefs .card-image:hover .card-img-top{
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.card-image:hover .gray-bg{
+/* .card-image:hover .gray-bg{
     display: block;
     transition: 0.5s;
-}
+} */
 
-.card-image:hover .socials{
+#chefs .card-image:hover .socials{
     display: block;
     top: 50%;
     transition: 0.5s;
@@ -420,7 +422,7 @@ header{
 
 .socials{
     position: absolute;
-    top: 110%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -431,16 +433,30 @@ header{
     margin-left: 5px;
 }
 
-
-
-
-
+/* Reviews */
 
 
 
 @media only screen and (max-width:668px) {
 
-    .carousel-caption{
+    nav{
+        background-color:white;
+        display: block;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: black;
+    }
+
+    .navbar .navbar-nav .nav-item .active{
+        color:#fbaf32;
+    }
+
+    .navbar-light .navbar-brand{
+        font-size: 32px;
+    }
+
+    header .carousel-caption{
         position: absolute;
         top: 67%;
         left: 50%;
@@ -448,13 +464,19 @@ header{
         z-index: 2;
         width: 80%;
     }
-    .carousel-caption h1{
+    header .carousel-caption h1{
         font-size: 36px;
     }
 
     /* Book a Table */
     #book-table{
         padding: 20px;  
+    }
+
+    /* Menu */
+
+    .menu-price-title{
+        flex-direction: column;
     }
 
     /* Food Cards */
