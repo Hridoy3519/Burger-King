@@ -307,71 +307,35 @@
             <div class="text-center">
                 <h5 class="greenish-text">Food menu</h5>
                 <h2>Delicious Food Menu</h2>
-                <button class="custom-food-btn green-btn">Burgers</button>
-                <button class="custom-food-btn yellow-btn">Snacks</button>
-                <button class="custom-food-btn yellow-btn">Beverage</button>
+                <button id="burger" class="custom-food-btn my-2">Burgers</button>
+                <button id="snack" class="custom-food-btn my-2">Snacks</button>
+                <button id="beverage" class="custom-food-btn my-2">Beverage</button>
             </div>
 
             <div class="mt-5">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 menu-area">
                         <div class="d-flex align-items-center mb-3">
                             <div>
                                 <img class="img-round" src="images/menu-burger.jpg" alt="">
                             </div>
                             <div class="menu-details">
-                                <h3>Mini cheese Burger <span class="dot">................................. <span
-                                            class="yellowish-text price">$9.00</span></span></h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div>
-                                <img class="img-round" src="images/menu-burger.jpg" alt="">
-                            </div>
-                            <div class="menu-details">
-                                <h3>Double Size Burger <span class="dot">................................. <span
-                                            class="yellowish-text price">$11.00</span></span></h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div>
-                                <img class="img-round" src="images/menu-burger.jpg" alt="">
-                            </div>
-                            <div class="menu-details">
-                                <h3>Bacon, EGG & Cheese <span class="dot">........................... <span
-                                            class="yellowish-text price">$13.00</span></span></h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div>
-                                <img class="img-round" src="images/menu-burger.jpg" alt="">
-                            </div>
-                            <div class="menu-details">
-                                <h3>Pulled Beef Burger <span class="dot">................................. <span
-                                            class="yellowish-text price">$18.00</span></span></h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div>
-                                <img class="img-round" src="images/menu-burger.jpg" alt="">
-                            </div>
-                            <div class="menu-details">
-                                <h3>Fried Chicken Burger <span class="dot">............................ <span
-                                            class="yellowish-text price">$22.00</span></span></h3>
+                                <div class="d-flex justify-content-between">
+                                    <h3>Mini cheese Burger</h3>
+                                    <h3 class="yellowish-text price">$9.00</h3>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <img class="img-fluid radius" src="images/menu-burger-img.jpg" alt="">
+                        <img id="menu-image" class="img-fluid radius" src="images/menu-burger-img.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Chefs -->
 
         <section class="container" id="chefs">
             <div class="text-center">
@@ -382,7 +346,7 @@
             <div>
                 <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 justify-content-center">
                             <div class="card-image">
                                 <div class="gray-bg"></div>
                                 <img src="images/team-1.jpg" class="card-img-top" alt="...">
@@ -400,7 +364,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 justify-content-center">
                             <div class="card-image">
                                 <div class="gray-bg"></div>
                                 <img src="images/team-2.jpg" class="card-img-top" alt="...">
@@ -418,7 +382,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 justify-content-center">
                             <div class="card-image">
                                 <div class="gray-bg"></div>
                                 <img src="images/team-3.jpg" class="card-img-top" alt="...">
@@ -436,7 +400,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 justify-content-center">
                             <div class="card-image">
                                 <div class="gray-bg"></div>
                                 <img src="images/team-4.jpg" class="card-img-top" alt="...">
@@ -456,12 +420,103 @@
                 </div>
             </div>
         </section>
+
+        <!-- Review -->
+
+
+        <!-- Contact US -->
+        <section></section>
     </main>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
 </body>
 
 </html>
+
+
+<!-- <section class="container" id="food-menu">
+    <div class="text-center">
+        <h5 class="greenish-text">Food menu</h5>
+        <h2>Delicious Food Menu</h2>
+        <button class="custom-food-btn green-btn my-2">Burgers</button>
+        <button class="custom-food-btn yellow-btn my-2">Snacks</button>
+        <button class="custom-food-btn yellow-btn my-2">Beverage</button>
+    </div>
+
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <img class="img-round" src="images/menu-burger.jpg" alt="">
+                    </div>
+                    <div class="menu-details">
+                        <div class="d-flex justify-content-between">
+                            <h3>Mini cheese Burger</h3>
+                            <h3 class="yellowish-text price">$9.00</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <img class="img-round" src="images/menu-burger.jpg" alt="">
+                    </div>
+                    <div class="menu-details">
+                        <div class="d-flex justify-content-between">
+                            <h3>Mini cheese Burger</h3>
+                            <h3 class="yellowish-text price">$9.00</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <img class="img-round" src="images/menu-burger.jpg" alt="">
+                    </div>
+                    <div class="menu-details">
+                        <div class="d-flex justify-content-between">
+                            <h3>Mini cheese Burger</h3>
+                            <h3 class="yellowish-text price">$9.00</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <img class="img-round" src="images/menu-burger.jpg" alt="">
+                    </div>
+                    <div class="menu-details">
+                        <div class="d-flex justify-content-between">
+                            <h3>Mini cheese Burger</h3>
+                            <h3 class="yellowish-text price">$9.00</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <img class="img-round" src="images/menu-burger.jpg" alt="">
+                    </div>
+                    <div class="menu-details">
+                        <div class="d-flex justify-content-between">
+                            <h3>Mini cheese Burger</h3>
+                            <h3 class="yellowish-text price">$9.00</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid radius" src="images/menu-burger-img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section> -->
